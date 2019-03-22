@@ -1,0 +1,17 @@
+
+
+@mixin tablet {
+
+  @media screen and (min-width: 768px) {
+    @content; //väljer ut det vi vill visa i tablet format / alltid i MIN-WITDH
+  }
+
+}
+
+@mixin desktop {
+
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+
+}

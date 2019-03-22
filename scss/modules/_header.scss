@@ -1,0 +1,242 @@
+header {
+
+  .toggle {
+    position: relative;
+
+    button, .toggleButton {
+
+      display: block;
+      z-index: 1000000;
+      position: absolute;
+      right: 0;
+      background-color: white;
+    }
+
+    p{
+      margin-bottom:0;
+    }
+  }
+
+  .header_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    .logotype {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding-right: 2%;
+
+      img {
+
+        max-width: 100%;
+        height: auto;
+        padding: 30px;
+        -ms-flex-item-align:center;
+        -ms-grid-row-align:center;
+        align-self:center;
+      }
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+
+      i {
+        display: none;
+        font-size: 3em;
+
+      }
+
+      :hover {
+        color: $secondColor;
+      }
+
+    }
+  }
+
+  nav {
+    display: none;
+    margin-left: 55px;
+
+    ul {
+
+      list-style: none;
+      margin: 0;
+      padding:0;
+      width:100%;
+      padding-bottom: 20px;
+
+      li a {
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+        li :hover  {
+        color: $secondColor;
+      }
+    }
+
+
+  }
+
+  .header_image {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+
+    .img_container {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .head_img {
+      display: block;
+      height: auto;
+      width: 200%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .head_img2 {
+      display: none;
+    }
+
+  }
+
+  .poly_desktop {
+    height: 70px;
+    z-index: 100000;
+    padding: 0;
+    margin-top: -40px;
+
+    .mediumPoly {
+      display: none;
+    }
+
+    .largePoly {
+      display: none;
+      width: auto;
+      height: 350px;
+    }
+
+  }
+}
+
+@include tablet { // here we call, what we want to include
+
+  header {
+
+    .toggle, .button {
+      display: none !important;
+    }
+  }
+  .head_img {
+    display: none !important;
+  }
+
+  .head_img2 {
+    display: block !important;
+    width: 100%;
+    height: auto;
+  }
+
+  .header_content {
+    align-items: center;
+
+    .logotype {
+
+      img {
+        max-width: 700px;
+        min-width: 50px;
+        height: 100%;
+        padding-top: 45px;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+      }
+    }
+
+    .icon {
+
+      padding-left: 5%;
+      i {
+        display: block;
+
+      }
+    }
+
+  }
+  nav {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    padding: 0;
+    margin: 0;
+    width:100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+  }
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 500px;
+  }
+
+  .poly_desktop {
+
+    .mediumPoly {
+      display: block !important;
+    }
+
+    .largePoly {
+      display: none !important;
+
+    }
+  }
+
+}
+
+@include desktop {
+
+  .head_img {
+    display: none !important;
+  }
+
+  .head_img2 {
+    display: block !important;
+    width: 100%;
+    height: auto;
+  }
+
+  .poly_desktop {
+
+    .mediumPoly {
+      display: none !important;
+
+    }
+
+    .largePoly {
+      display: block !important;
+
+    }
+  }
+
+}

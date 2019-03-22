@@ -1,0 +1,702 @@
+main {
+
+  .main_content, .main_content_destination {
+    padding-bottom: 40px;
+
+    .hr_desk {
+      display: none;
+      border-top: solid 2px gray;
+      padding-bottom: 20px;
+      width: 82vw;
+    }
+
+    .hr_mobile {
+      display: block;
+      border-top: solid 2px gray;
+      padding-bottom: 10px;
+    }
+
+    .destination_img {
+      padding-left: 0;
+      padding-right: 0;
+      border: white solid 5px;
+
+    }
+
+    p {
+      font-size: small;
+    }
+
+    img {
+      padding: 5px;
+    }
+
+    .tablet_img {
+      width: 100%;
+    }
+
+    .text_box_main {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+
+      .index_text {
+        max-width: 400px;
+        text-align: center;
+        h2 {
+          text-transform: uppercase;
+          font-weight: bolder;
+        }
+
+        p {
+          padding-top: 10px;
+        }
+      }
+
+      .poly_mobile {
+        z-index: 1000000;
+        position: relative;
+
+        .smallPoly {
+          display: block;
+          position: absolute;
+          left: 0;
+          padding: 0;
+          top: 150px;
+          width: 160px;
+        }
+      }
+    }
+    .center_aligned {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+    .destination_info {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      position: relative;
+
+      .hr_poly {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+}
+
+.bolivia {
+  position: relative;
+  z-index: 1000;
+
+  p {
+    display: block;
+    position: absolute;
+    color: black;
+    background-color: white;
+    right: 20px;
+    top: 5px;
+    padding: 0 10px 0;
+
+  }
+}
+
+.middle_img {
+  position: relative;
+  z-index: 1000;
+  p {
+    display: block;
+    position: absolute;
+    color: black;
+    background-color: white;
+    right: 20px;
+    bottom: -11px;
+    padding: 0 10px 0;
+  }
+}
+
+.left_col {
+  padding-left: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1000;
+
+  p {
+    display: block;
+    position: absolute;
+    color: black;
+    background-color: white;
+    right: 20px;
+    bottom: -11px;
+    padding: 0 10px 0;
+  }
+
+}
+
+.right_col {
+  padding-right: 0;
+  position: relative;
+  z-index: 1000;
+
+  .indo1 {
+    display: block;
+    position: absolute;
+    color: black;
+    background-color: white;
+    left: 20px;
+    top: 5px;
+    padding: 0 10px 0;
+  }
+
+  .left_img {
+    display: block;
+    position: absolute;
+    color: black;
+    background-color: white;
+    right: 5px;
+    bottom: -11px;
+    padding: 0 10px 0;
+  }
+
+  .peru {
+    display: block;
+    position: absolute;
+    color: black;
+    background-color: white;
+    left: 20px;
+    top: 5px;
+    padding: 0 10px 0;
+  }
+  .newz {
+    display: block;
+    position: absolute;
+    color: black;
+    background-color: white;
+    left: 20px;
+    bottom: -11px;
+    padding: 0 10px 0;
+  }
+
+}
+
+.img_small {
+  -o-object-fit: cover;
+  object-fit: cover;
+  min-height: 100%;
+}
+
+.index_text {
+
+  text-align: center;
+  font-family: $fontBread;
+  font-size: small;
+  padding: 20px;
+  height: 150px;
+  color: black;
+  min-height: 200px;
+
+  .destination_text {
+
+    padding: 10px 0 10px;
+    font-family: $fontMain;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: black;
+  }
+}
+
+.travel_text {
+  text-align: left;
+  font-family: $fontBread;
+  font-size: small;
+  padding: 5px;
+  padding-bottom: 40px;
+  color: black;
+  max-width: 400px;
+
+  h4 {
+    text-align: left;
+    color: black;
+    font-weight: bolder;
+
+  }
+
+}
+
+.middle_section {
+
+  .about_box {
+    background-color: black;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    .about_text {
+      max-width: 500px;
+      text-align: center;
+      background-color: black;
+      color: white;
+      padding-top: 40px;
+      padding-bottom: 40px;
+
+      .text {
+        padding-top: 10px;
+        padding-bottom: 0;
+        margin: 0;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        font-family: $fontBread;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 2.5em;
+        color: white;
+
+      }
+      p {
+        padding: 0;
+        font-size: 1em;
+        text-align: center;
+
+      }
+
+    }
+
+    .polyright_mobile {
+      height: 20px;
+      z-index: 2;
+      padding: 0;
+      background-color: white;
+      position: relative;
+
+      .mobile_right {
+        display: block;
+        right: 0;
+        position: absolute;
+        width: 115px;
+
+      }
+      .tab_right {
+        display: none;
+        z-index: 2;
+        position: absolute;
+        right: 0;
+      }
+      .desk_right {
+        display: none;
+        z-index: 2;
+        right: 0;
+        position: absolute;
+
+      }
+
+    }
+
+    .polyleft_mobile {
+      z-index: 2;
+      padding: 0;
+      position: relative;
+
+      .mobile_left {
+        display: block;
+        position: absolute;
+        bottom: -80px;
+        width: 115px;
+      }
+
+      .tab_leftPol {
+        display: none;
+        height: 285px;
+        z-index: 2;
+        padding: 0;
+        margin-top: -210px;
+        position: absolute;
+
+      }
+
+    }
+
+  }
+
+}
+
+.main_content_tablet {
+  display: none;
+  padding-left: 0;
+  padding-right: 0;
+
+  padding-bottom: 40px;
+
+  .center_img {
+    margin-top: -68px;
+  }
+
+  img {
+    padding: 0;
+    margin: 0;
+  }
+
+  .text_box_main {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    .index_text {
+      max-width: 600px;
+      text-align: center;
+      p {
+        padding-top: 10px;
+      }
+    }
+
+    .poly_mobile {
+      z-index: 1000000;
+      position: relative;
+
+      .smallPoly {
+        display: block;
+        position: absolute;
+        left: 0;
+        padding: 0;
+        top: 170px;
+      }
+    }
+
+  }
+
+  .first_row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    .col-4 {
+      padding: 0;
+    }
+
+    .left_top_desk {
+      position: relative;
+      padding-right: 0;
+      z-index: 1000;
+
+      .indo1 {
+        position: absolute;
+        left: 4px;
+        bottom: -12px;
+        background-color: white;
+        padding: 0 15px 0;
+      }
+
+    }
+
+    .right_top_desk {
+      position: relative;
+      padding-right: 0;
+      z-index: 1000;
+
+      .bolivia {
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        background-color: white;
+        padding: 0 4px 0;
+      }
+      .indo2 {
+        position: absolute;
+        right: 4px;
+        bottom: -12px;
+        background-color: white;
+        padding: 0 15px 0;
+      }
+    }
+    img {
+      border: 10px solid white;
+    }
+
+  }
+
+  .second_row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: -3px;
+
+    .center_col {
+      position: relative;
+      padding-right: 0;
+      z-index: 1000;
+
+      .indo3 {
+        position: absolute;
+        left: 80px;
+        bottom: 15px;
+        background-color: white;
+        padding: 0 15px 0;
+      }
+
+      .indo4 {
+        position: absolute;
+        left: 4px;
+        bottom: 15px;
+        background-color: white;
+        padding: 0 4px 0;
+      }
+
+      .new {
+        position: absolute;
+        left: 4px;
+        bottom: 15px;
+        background-color: white;
+        padding: 0 15px 0;
+      }
+
+    }
+
+    img {
+      border: 10px solid white;
+    }
+
+  }
+  .third_row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: -36px;
+    z-index: 10000;
+
+    img {
+      border: 10px solid white;
+    }
+
+    .right_aligned {
+      padding: 0;
+      position: relative;
+      z-index: 1000;
+
+      .peru {
+        position: absolute;
+        right: 4px;
+        bottom: -15px;
+        background-color: white;
+        padding: 0 14px 0;
+      }
+
+      .peru2 {
+        position: absolute;
+        right: 4px;
+        bottom: -15px;
+        background-color: white;
+        padding: 0 15px 0;
+      }
+
+      .nepal2 {
+        position: absolute;
+        right: 4px;
+        bottom: -15px;
+        background-color: white;
+        padding: 0 15px 0;
+      }
+
+    }
+    .dub_aligned {
+      padding: 0;
+      position: relative;
+      z-index: 1000;
+
+      .bolivia2 {
+        position: absolute;
+        right: 4px;
+        bottom: 135px;
+        background-color: white;
+        padding: 0 15px 0;
+      }
+      .nepal {
+        position: absolute;
+        right: 4px;
+        top: 170px;
+        background-color: white;
+        padding: 0 15px 0;
+      }
+    }
+  }
+
+  .fourth_row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    .right_aligned {
+      padding: 0;
+      position: relative;
+      z-index: 1000;
+
+      .tanzania {
+        position: absolute;
+        right: 4px;
+        bottom: -15px;
+        background-color: white;
+        padding: 0 15px 0;
+      }
+    }
+    img {
+      border: 10px solid white;
+    }
+  }
+
+  .center_row {
+    margin-left: -97px;
+
+    .col-6 {
+      padding: 0;
+    }
+
+    img {
+      border: 10px solid white;
+
+    }
+  }
+
+}
+
+section {
+
+  .icon_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .playful_icons {
+    padding: 50px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    .multi_icons {
+      text-align: center;
+      padding: 15px;
+      max-width: 300px;
+    }
+
+    .baloon {
+      padding-right: 33px;
+      padding-left: 33px;
+    }
+
+    .mount {
+      padding: 28px 25px 28px;
+    }
+
+    i {
+      font-size: 3em;
+      border: solid black 2px;
+      padding: 25px;
+      border-radius: 80%;
+
+    }
+    h5 {
+      font-family: $fontMain;
+      text-transform: uppercase;
+      font-weight: 900;
+      text-align: center;
+      padding: 20px 0 20px;
+    }
+    .text {
+      font-family: $fontBread;
+      text-align: center;
+      padding: 20px 0 10px;
+
+    }
+  }
+}
+
+@include tablet {
+
+  .hr_desk {
+    display: block !important;
+  }
+  .hr_mobile {
+    display: none !important;
+  }
+
+  .main_content {
+    display: none !important;
+  }
+
+  .main_content_tablet {
+    display: block !important;
+  }
+
+  .polyleft_mobile {
+
+    .mobile_left {
+      display: none !important;
+    }
+
+    .tab_leftPol {
+      display: block !important;
+    }
+  }
+  .poly_mobile {
+
+    .smallPoly {
+      display: none !important;
+    }
+  }
+
+  .polyright_mobile {
+
+    .mobile_right {
+      display: none !important;
+    }
+    .tab_right {
+      display: block !important;
+    }
+    .desk_right {
+      display: none !important;
+    }
+  }
+
+  .playful_icons {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+
+  }
+
+}
+
+@include desktop {
+
+  .poly_mobile {
+
+    .smallPoly {
+      display: none !important;
+    }
+  }
+
+  .about_text {
+    padding: 90px 0 90px;
+  }
+
+  .polyright_mobile {
+
+    .mobile_right {
+      display: none !important;
+    }
+    .tab_right {
+      display: none !important;
+    }
+    .desk_right {
+      display: block !important;
+    }
+  }
+}
