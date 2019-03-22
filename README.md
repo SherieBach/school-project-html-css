@@ -1,2 +1,1 @@
-# school-project
-Blog
+# school-project1
