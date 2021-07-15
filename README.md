@@ -1,6 +1,6 @@
 # Mockup Build up HTML/SCSS
 
-This is a build up from a mockup by another student, UX design course with HTML/CSS. 
+This is a build up from a mockup created by another student, UX/UI also design course. 
 
 
 
