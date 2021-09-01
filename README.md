@@ -2,6 +2,8 @@
 
 This is a build up from a mockup created by another student, UX/UI also design course. 
 
+Visit the site at https://school-project.sherie.se/
+
 
 
 
